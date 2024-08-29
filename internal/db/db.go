@@ -17,7 +17,7 @@ func init() {
 	var err error
 	O, err = gorm.Open("mysql", config.C.GetString(constant.DataSource))
 	if err != nil {
-		logger.L.Errorf("Fatal error db: %v\n", err)
+		logger.L.Fatalf("Fatal error db: %v\n", err)
 	}
 	O.SingularTable(true)
 }

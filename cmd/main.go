@@ -6,7 +6,7 @@ import (
 	cors "github.com/rs/cors/wrapper/gin"
 	"github.com/sirupsen/logrus"
 	"net/http"
-	"pf-agent/controller/user"
+	"pf-agent/controller/account"
 	"pf-agent/internal/authentication"
 	"pf-agent/internal/config"
 	"pf-agent/internal/constant"
@@ -31,9 +31,9 @@ func main() {
 		AllowedHeaders:   []string{"*"},
 		AllowCredentials: true,
 	}))
-	user.Route(engine)
+	account.Route(engine)
 	authorized := engine.Group("/", authentication.Authentication)
-	user.AuthenticationRoute(authorized)
+	account.AuthenticationRoute(authorized)
 	routeStatic(engine)
 	addr := fmt.Sprintf(":%d", config.C.GetInt(constant.ServerPort))
 	logger.L.Infof("Listening and serving HTTP on : %s", addr)

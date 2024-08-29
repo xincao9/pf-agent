@@ -15,7 +15,7 @@ const (
 )
 
 const (
-	SessionUser       = "S_USER"
+	SessionAccount    = "S_ACCOUNT"
 	SessionExpireHour = 24
 	Success           = "success"
 	SystemError       = "system error"
