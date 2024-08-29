@@ -7,7 +7,7 @@ const (
 	ServerPort                         = "server.port"
 	ServerCorsAccessControlAllowOrigin = "server.cors.access-control-allow-origin"
 	ManagerServerPort                  = "manager.server.port"
-	DataSource                         = "db.dataSource"
+	DataSource                         = "db.data-source"
 	AssetsRootDir                      = "assets.root"
 	AssetsJsDir                        = "assets.js"
 	AssetsCssDir                       = "assets.css"
