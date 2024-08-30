@@ -6,6 +6,6 @@ import (
 )
 
 func Use(engine *gin.Engine) {
-	p := ginprometheus.NewPrometheus("pf-agent")
+	p := ginprometheus.NewPrometheus("pf_agent")
 	p.Use(engine)
 }
