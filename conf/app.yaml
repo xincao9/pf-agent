@@ -1,5 +1,5 @@
 db:
-  data-source: dev:qY1>tK0rI@tcp(localhost:3306)/pf_agent?charset=utf8&parseTime=true
+  data-source: root:asdf@tcp(localhost:3306)/pf_agent?charset=utf8&parseTime=true
 logger:
   dir: /tmp/pf-agent/log
   level: debug
